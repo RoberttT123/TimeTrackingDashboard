@@ -1,15 +1,19 @@
 import react from 'react';
 import UserInfo from './component/userInfo/userInfo';
+import Time from "./component/time/time"
+import TabContent from './component/tabContent/tabContent';
 const TimeTracker=()=>{
     return(
         <div className='timeTracker'>
          <div className='timeList'>
             <UserInfo />
-            <div className='userInfo'></div>
-        <div className='time'> </div>
+            <Time />
+        </div>
 
-      </div>
-      <div className='tracker'>
+      <div className='tracker tabContainer'>
+          <TabContent tab="daily" className="tabContent active"/>
+          <TabContent tab="weekly" className="tabContent"/>
+          <TabContent tab="montly" className="tabContent"/>
 
       </div>
 
