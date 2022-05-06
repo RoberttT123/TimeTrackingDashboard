@@ -18,10 +18,10 @@ class Time extends Component{
     render(){
         return(
             <div className="time">
-                <ul className="tabs">
-                    <li data-tab="daily" className="tab active" onClick={e=>this.changeActiveTab(e)}>daily</li>
-                    <li data-tab="weekly" className="tab" onClick={e=>this.changeActiveTab(e)}>weekly</li>
-                    <li data-tab="monthly" className="tab" onClick={e=>this.changeActiveTab(e)}>monthly</li>
+               <ul className="tabs">
+                    <li data-tab="daily" className="tab active" >daily</li>
+                    <li data-tab="weekly" className="tab" >weekly</li>
+                    <li data-tab="monthly" className="tab" >monthly</li>
                 </ul>
             </div>
         )
